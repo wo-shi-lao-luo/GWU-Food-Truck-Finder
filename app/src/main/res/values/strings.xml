@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">GWU Food Truck Finder</string>
+    <string name="title_activity_maps">Map</string>
+    <string-array name="food_styles">;
+        <item>All</item>
+        <item>Chinese</item>
+        <item>Mexican</item>
+        <item>Mediterranean</item>
+        <item>Halal</item>
+        <item>Middle Eastern</item>
+        <item>Favorite</item>
+    </string-array>
+</resources>

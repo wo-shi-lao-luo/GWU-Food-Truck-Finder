@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:id="@+id/scroll"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F3F2">
+
+        <ImageView
+            android:id="@+id/head_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/tobedone"
+            android:adjustViewBounds="true"
+            android:background="#FFF"/>
+
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#FFF">
+
+                    <LinearLayout
+                        android:padding="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/restaurant_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Restaurant Name"
+                                android:textSize="30dp"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:textColor="#000"/>
+                            <TextView
+                                android:id="@+id/style"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Style"
+                                android:textSize="20dp"
+                                android:textStyle="bold|italic"
+                                android:gravity="center"
+                                android:textColor="#AAA"/>
+
+                            <TextView
+                                android:layout_marginTop="15dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Hour of Operations"
+                                android:textSize="24dp"
+                                android:textStyle="bold"
+                                android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/operation_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="00:00 am - 00:00 am"
+                                android:textSize="20dp"
+                                android:textStyle="italic"
+                                android:gravity="center"
+                                android:textColor="#000"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Sat &amp;&amp; Sun Closed"
+                                android:textSize="20dp"
+                                android:textStyle="italic"
+                                android:gravity="center"
+                                android:textColor="#000"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:id="@+id/rating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0.0"
+                                android:layout_gravity="end"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:background="@drawable/rating_bg"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginTop="80dp"
+                                android:layout_gravity="end"
+                                >
+
+                                <Switch
+                                    android:id="@+id/operating_switch"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true"
+                                    android:layout_gravity="center_horizontal"
+                                    android:theme="@style/SCBSwitch"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Operating Now?"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textStyle="bold"
+                                    android:textSize="16sp"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/report_operating_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Report"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:background="@drawable/button"
+                        android:theme="@style/PrimaryFlatButton"
+                        android:layout_gravity="center"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:padding="15dp"-->
+<!--                    android:background="#FFF">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Report Status"-->
+<!--                        android:textSize="24dp"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:gravity="center"-->
+<!--                        android:textColor="#000"-->
+<!--                        android:paddingBottom="8dp"/>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="horizontal"-->
+
+<!--                        android:weightSum="2">-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="vertical"-->
+<!--                            android:layout_weight="1"-->
+<!--                            >-->
+
+<!--                            <Switch-->
+<!--                                android:id="@+id/location_switch"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_gravity="center_horizontal"-->
+<!--                                android:checked="true"-->
+<!--                                android:theme="@style/SCBSwitch"/>-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_gravity="center_horizontal"-->
+<!--                                android:text="Correct Location?"-->
+<!--                                android:textSize="16sp"-->
+<!--                                android:textStyle="bold" />-->
+
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="vertical"-->
+<!--                            android:layout_weight="1"-->
+<!--                            >-->
+
+<!--                            <Switch-->
+<!--                                android:id="@+id/operating_switch"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:checked="true"-->
+<!--                                android:layout_gravity="center_horizontal"-->
+<!--                                android:theme="@style/SCBSwitch"/>-->
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="Operating Now?"-->
+<!--                                android:layout_gravity="center_horizontal"-->
+<!--                                android:textStyle="bold"-->
+<!--                                android:textSize="16sp"/>-->
+
+<!--                        </LinearLayout>-->
+
+<!--                    </LinearLayout>-->
+
+<!--                    <Button-->
+<!--                        android:layout_marginTop="15dp"-->
+<!--                        android:id="@+id/report_btn"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Report"-->
+<!--                        android:textSize="22sp"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:background="@drawable/button"-->
+<!--                        android:theme="@style/PrimaryFlatButton"-->
+<!--                        android:layout_gravity="center"/>-->
+
+
+<!--                </LinearLayout>-->
+
+
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:padding="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#FFF">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Menu Recommendation"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="#000"
+                        android:paddingBottom="8dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="190.5dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingLeft="55.5dp">
+
+                            <ImageView
+                                android:id="@+id/rec1_image"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/tobedone"/>
+
+                            <TextView
+                                android:id="@+id/recommendation1"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="Recom1"
+                                android:textColor="#000"
+                                android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/price1"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="Price1"
+                                android:textColor="#000"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="190.5dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingLeft="35dp">
+
+                            <ImageView
+                                android:id="@+id/rec2_image"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/tobedone"/>
+
+                            <TextView
+                                android:id="@+id/recommendation2"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="Recom1"
+                                android:textColor="#000"
+                                android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/price2"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="Price1"
+                                android:textColor="#000"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:background="#FFF"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="15dp"
+                                    android:text="Location"
+                                    android:textColor="#000"
+                                    android:textSize="24dp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:paddingTop="10dp"
+                                    android:paddingRight="15dp">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:layout_gravity="end"
+                                        >
+
+                                        <Switch
+                                            android:id="@+id/location_switch"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:checked="true"
+                                            android:theme="@style/SCBSwitch"/>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:text="Correct Location?"
+                                            android:textSize="16sp"
+                                            android:textStyle="bold" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <Button
+                                    android:id="@+id/report_location_btn"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:text="Report New Location"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    android:background="@drawable/button"
+                                    android:theme="@style/PrimaryFlatButton"
+                                    android:layout_gravity="center"
+                                    android:visibility="gone"/>
+
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="300dp">
+
+                                <fragment
+                                    xmlns:tools="http://schemas.android.com/tools"
+                                    android:id="@+id/map"
+                                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                                    android:layout_marginBottom="0dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="300dp"
+                                    tools:context=".MapsActivity" />
+
+                                <View
+                                    android:id="@+id/trans_bg"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@color/transparent" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

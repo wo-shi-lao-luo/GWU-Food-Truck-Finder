@@ -1,0 +1,91 @@
+{
+    "xian_cuisine": {
+        "name": "Xi'an Cuisine",
+        "operation": ["11:30", "19:00"],
+        "type": "Chinese",
+        "location": [38.8988854, -77.0488052],
+        "recommendation" : {
+            "r1": {
+                "name": "Rougamo buns",
+                "price" : "$4.99"
+            },
+            "r2": {
+                "name": "summer-liangpi cold noodle",
+                "price" : "$5.75"
+            }
+        },
+        "rating": 4.5
+    },
+
+    "pakos_takos": {
+        "name": "Pakos Takos",
+        "operation": ["11:00", "21:00"],
+        "type": "Mexican",
+        "location": [38.8989671, -77.0487962],
+        "recommendation" : {
+            "r1": {
+                "name": "chicken burrito",
+                "price" : "$7.99"
+            },
+            "r2": {
+                "name": "Mexican Salad",
+                "price" : "$5"
+            }
+        },
+        "rating": 3.8
+    },
+
+    "quickbite": {
+        "name": "QuickBite",
+        "operation": ["11:30", "19:00"],
+        "type": "Mediterranean",
+        "location": [38.8995448, -77.0484743],
+        "recommendation" : {
+            "r1": {
+                "name": "Bacon Cheese Burger",
+                "price" : "$6"
+            },
+            "r2": {
+                "name": "Chicken Cheese Steak",
+                "price" : "$8"
+            }
+        },
+        "rating": 3.5
+    },
+
+    "halal_grill": {
+        "name": "Halal Grill",
+        "operation": ["11:00", "14:00"],
+        "type": "Halal",
+        "location": [38.8995539, -77.0470182],
+        "recommendation" : {
+            "r1": {
+                "name": "Chicken Over Rice",
+                "price" : "$7.99"
+            },
+            "r2": {
+                "name": "Basmati Rice",
+                "price" : "$7.99"
+            }
+        },
+        "rating": 3.2
+    },
+
+    "tasty_kabob": {
+        "name": "Tasty Kabob",
+        "operation": ["11:00", "14:30"],
+        "type": "Middle Eastern",
+        "location": [38.8993945, -77.0488133],
+        "recommendation" : {
+            "r1": {
+                "name": "Lamb and Rice",
+                "price" : "$8.99"
+            },
+            "r2": {
+                "name": "(Chicken Over Salad",
+                "price" : "$7.99"
+            }
+        },
+        "rating": 4.6
+    }
+}
